@@ -1,0 +1,1 @@
+create user c##[사용자아이디] identified by [비밀번호];
