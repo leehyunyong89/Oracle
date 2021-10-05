@@ -1,0 +1,17 @@
+1.DBA 계정인 sys에 접속.
+  예시>
+  sqlplus / as sysdba
+2.해당 테이블스페이스에 대한 공간 할당해주기.
+  예시>
+  alter user [유저명] default tablespace [테이블스페이스] quota unlimited on [테이블스페이스];
+  ex) alter user myuser default tablespace users quota unlimited on users;
+
+
+
+
+실무예시>
+1. DBA 계정 접속. 
+  cmd를 관리자 권한으로 실행 후
+  sqlplus / as sysdba 입력
+2. 테이블스페이스에 대한 공간 할당.
+  alter user c##scott default tablespace users quota unlimited on users;
