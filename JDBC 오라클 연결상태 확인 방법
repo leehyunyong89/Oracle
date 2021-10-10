@@ -6,11 +6,13 @@ public class OracleEx01 {
 	public static void main(String[] args) {
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String user = "scott";
-		String password = "tiger";
+		String user = "DB접속 아이디";
+		String password = "DB접속 비밀번호";
 		try {
+			//드라이버 로딩
 			Class.forName(driver);
 			System.out.println("jdbc driver 로딩 성공");
+			//오라클 DB 연결
 			DriverManager.getConnection(url, user, password);
 			System.out.println("오라클 연결 성공");
 		} catch (ClassNotFoundException e) {
