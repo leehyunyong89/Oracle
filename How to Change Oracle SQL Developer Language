@@ -1,3 +1,17 @@
+========================general method========================
+
+
+1. Go to C:\<SQLDeveloper Path>\ide\bin, open ide.conf
+2. Add AddVMOption -Duser.language=en in the end of ide.conf
+3. Relaunch Oracle SQL Developer
+
+
+
+
+
+
+========================CML method========================
+
 you can send the language setting as a command line argument when executing SQL Developer, 
 so you can make it use a specific language by just modifying the shortcut’s target, like this:
 
@@ -8,3 +22,6 @@ Please note that those are two hyphens before AddVMOption, but only one after th
 
 Also, your shortcut’s target is probably different because it depends on the route where you unpacked the installer, 
 so, don’t pay much attention to the whole path in my example, and just add " --AddVMOption=-Duser.language=en" at the end of your current shortcut’s target.
+
+
+
